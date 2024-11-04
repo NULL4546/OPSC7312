@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="@color/app_background"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-48dp">
+        tools:layout_editor_absoluteY="16dp">
 
 
         <TextView
@@ -45,9 +45,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="404dp"
+            android:padding="15dp"
             app:boxStrokeColor="@android:color/black"
             app:boxStrokeWidth="2dp"
-            android:padding="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="0dp">
 
@@ -55,8 +55,8 @@
                 android:id="@+id/usernameText"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:padding="15dp"
-                android:hint="@string/email" />
+                android:hint="@string/email"
+                android:padding="15dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="160dp"
+            android:layout_marginBottom="110dp"
             android:clickable="true"
             android:minHeight="48dp"
             android:paddingTop="16dp"
@@ -111,14 +111,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginButton"
-            app:layout_constraintVertical_bias="0.888" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/SignUpTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="84dp"
+            android:layout_marginBottom="50dp"
             android:clickable="true"
             android:minHeight="48dp"
             android:paddingTop="16dp"
@@ -130,7 +130,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTextView"
-            app:layout_constraintVertical_bias="0.87" />
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_google_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/forgotPasswordTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

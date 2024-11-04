@@ -20,4 +20,6 @@
     <string name="dark_mode_light_mode">Dark Mode / Light Mode</string>
     <string name="first_fragment_label">Notes</string>
     <string name="second_fragment_label">Add or Edit Notes</string>
+    <string name="default_web_client_id">940845870978-9qp8cdj0jnqaf1ka732ns2vapd01guu4.apps.googleusercontent.com</string>
+
 </resources>
