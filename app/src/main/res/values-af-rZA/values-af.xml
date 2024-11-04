@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notas Aansoek</string>
+    <string name="hello_there">Hallo daar,</string>
+    <string name="welcome_back">Welkom Terug</string>
+    <string name="email">E-pos:</string>
+    <string name="password">Wagwoord:</string>
+    <string name="login">Teken In</string>
+    <string name="forgot_password">Wagwoord Vergeet?</string>
+    <string name="not_a_member_sign_up_instead">Nie n lid nie? Registreer eerder.</string>
+    <string name="create_an_account">Skep n rekening</string>
+    <string name="confirm_password">Bevestig Wagwoord:</string>
+    <string name="create">Skep</string>
+    <string name="already_a_member_sign_in_instead">Reeds n lid? Teken eerder in.</string>
+    <string name="title">Titel</string>
+    <string name="note_content">Nota Inhoud...</string>
+    <string name="date">Datum</string>
+    <string name="content">Inhoud</string>
+    <string name="switch_to_afrikaans">Skakel oor na Afrikaans of Engels</string>
+    <string name="log_out">Meld af</string>
+    <string name="dark_mode_light_mode">Dark-modus / ligmodus</string>
+    <string name="first_fragment_label">Notas</string>
+    <string name="second_fragment_label">Voeg notas by of wysig</string>
+</resources>

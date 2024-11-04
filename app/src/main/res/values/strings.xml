@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Notes Application</string>
+    <string name="hello_there">Hello there,</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="not_a_member_sign_up_instead">Not a member? Sign up instead.</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="create">Create</string>
+    <string name="already_a_member_sign_in_instead">Already a member? Sign in instead.</string>
+    <string name="title">Title</string>
+    <string name="note_content">Note Content...</string>
+    <string name="date">Date</string>
+    <string name="content">Content</string>
+    <string name="switch_to_afrikaans">Switch to Afrikaans or English</string>
+    <string name="log_out">Log out</string>
+    <string name="dark_mode_light_mode">Dark Mode / Light Mode</string>
+    <string name="first_fragment_label">Notes</string>
+    <string name="second_fragment_label">Add or Edit Notes</string>
+</resources>

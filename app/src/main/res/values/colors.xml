@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_theme">#009dff</color>
+    <color name="enter_text">#E6E0E9</color>
+    <color name="button">#65558F</color>
+    <color name="app_background">#FEF7FF</color>
+
+
+
+    <color name="blue">#459DE4</color>
+    <color name="red">#FF0000</color>
+
+
+</resources>

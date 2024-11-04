@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "940845870978",
+    "project_id": "notes-taking-application-bad93",
+    "storage_bucket": "notes-taking-application-bad93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940845870978:android:30991425c32e2a3983a99b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7l73LkbMu0Q3eLhiEZ1oeHvP-g03Dgtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940845870978:android:c2476f6f535f493683a99b",
+        "android_client_info": {
+          "package_name": "com.example.notesapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7l73LkbMu0Q3eLhiEZ1oeHvP-g03Dgtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

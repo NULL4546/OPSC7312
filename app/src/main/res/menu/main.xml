@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/dark_mode_light_mode"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_switch_language"
+        android:orderInCategory="100"
+        android:title="@string/switch_to_afrikaans"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+</menu>
