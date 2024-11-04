@@ -29,6 +29,9 @@ jobs:
           build-tools: '33.0.2'
           target: 'android-33'
 
+      - name: Make Gradlew executable
+        run: chmod +x ./gradlew
+
       - name: Build with Gradle
         run: ./gradlew build
 
