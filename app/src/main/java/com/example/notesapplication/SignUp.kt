@@ -30,24 +30,19 @@ class SignUp : AppCompatActivity() {
 
 
         enableEdgeToEdge()
-        // setContentView(R.layout.activity_sign_up)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // Start Code
 
-        // Find Textview
         val signInTextView: TextView = findViewById(R.id.SignInTextView)
         signInTextView.setOnClickListener{
-            // Start Login Activity
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 
-        // Sign-up action with firebase authentication
         binding.createButton.setOnClickListener{
             val email = binding.usernameTxt.text.toString()
             val password = binding.passwordTxt.text.toString()

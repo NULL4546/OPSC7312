@@ -48,7 +48,6 @@ class Login : AppCompatActivity() {
             insets
         }
 
-        // Configure Google Sign-In
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
@@ -57,24 +56,20 @@ class Login : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        // Handle Google Sign-In button click
         binding.btnGoogleSignIn.setOnClickListener {
             signInWithGoogle()
         }
 
-        // Check if biometric login is enabled and show prompt
         if (isBiometricLoginEnabled()) {
             checkBiometricSupportAndAuthenticate()
         }
 
-        // Handle sign-up textview click to start SignUp activity
         val signUpTextView: TextView = findViewById(R.id.SignUpTextView)
         signUpTextView.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
 
-        // Handle Firebase login with email and password
         binding.loginButton.setOnClickListener {
             val email = binding.usernameText.text.toString()
             val password = binding.passwordText.text.toString()
@@ -82,7 +77,6 @@ class Login : AppCompatActivity() {
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        // After successful Firebase login, ask if user wants to enable biometric login
                         showEnableBiometricOption()
                         proceedToMainActivity()
                     } else {
@@ -149,7 +143,6 @@ class Login : AppCompatActivity() {
             object : BiometricPrompt.AuthenticationCallback() {
                 override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                     super.onAuthenticationSucceeded(result)
-                    // Automatically sign in on successful biometric authentication
                     proceedToMainActivity()
                 }
 
@@ -174,8 +167,7 @@ class Login : AppCompatActivity() {
     }
 
     private fun showEnableBiometricOption() {
-        // Show a prompt asking if the user wants to enable biometric login
-        val enableBiometric = true  // For simplicity; use a dialog or checkbox here in a real app
+        val enableBiometric = true
 
         if (enableBiometric) {
             sharedPreferences.edit().putBoolean("biometric_login_enabled", true).apply()
@@ -185,6 +177,6 @@ class Login : AppCompatActivity() {
     private fun proceedToMainActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-        finish() // Close the Login activity
+        finish()
     }
 }
